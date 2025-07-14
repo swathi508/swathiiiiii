@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<style>
+    .box {
+        width:120px;
+        height:80px;
+        color: azure;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+    .static {
+        position: static;
+        background-color: aqua;
+    }
+    .relative {
+        position: relative;
+        background-color: coral;
+    }
+    .fixed {
+        position: fixed;
+        background: blue;
+        text-align: right;
+    }
+    .absolute {
+        position: absolute;
+        background-color: pink;
+    }
+    .absolute-container {
+      position: relative;
+      height: 150px;
+      border: 1px;
+    }
+    .sticky {
+        position: sticky;
+        background-color: green;
+
+    }
+</style>
+<body>
+    <div class="box static">Static</div>
+     <div class="box relative">Relative</div>
+      <div class="box fixed">fixed</div>
+      <div class="absolute-container">
+       <div class="box absolute">Absolute (inside container)</div>
+       </div>
+        <div class="box sticky">Sticky</div>
+    <p>Scroll down to see sticky in action and fixed stays in corner.</p>
+    <p style="height:500px;">scrollable space</p>   
+</body>
+</html>
