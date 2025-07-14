@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button:hover {
+        background-color: aqua;
+        cursor:pointer;
+    }
+    li:first-child {
+        color: blue;
+    }
+    li:last-child {
+        color: brown;
+    }
+    li:nth-child(2) {
+        font-weight: bold;
+    }
+    input:focus {
+        color: green;
+
+    }
+    input:checked+label{
+        font-weight: bold;
+        border: 2px;
+    }
+    
+</style>
+<body>
+    <h2>psuedo-classs demo</h2>
+    <button>Hover me!</button>
+    <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+        <li>last item</li>
+    </ul>
+    <label>
+          <input type="text" placeholder="focus me!"><br>
+   <input type="checkbox"id="check1"></label>
+
+</body>
+</html>
+   
